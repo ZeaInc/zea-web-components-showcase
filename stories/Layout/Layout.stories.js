@@ -36,13 +36,13 @@ export default {
   parameters: {
     docs: {
       description: {
-        component: 'some component _markdown_'
+        component: '**Layout description**'
       },
       source: {
         code: `<zea-layout orientation="vertical" cell-a-size="50" resize-cell-a="false" cell-c-size="0" resize-cell-c="false" />`
       },
+    },
   },
-  }
 };
 
 const Template = (args) => Layout(args);
