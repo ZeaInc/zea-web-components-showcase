@@ -1,4 +1,4 @@
-const { NumberParameter } = globalThis.zeaEngine
+import { NumberParameter } from '@zeainc/zea-engine'
 
 /**
  * Primary UI component for user interaction

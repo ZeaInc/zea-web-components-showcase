@@ -1,5 +1,5 @@
 import { html } from 'lit-html';
-const { CodeParameter } = globalThis.zeaEngine
+import { CodeParameter } from '@zeainc/zea-engine'
 
 /**
  * Primary UI component for user interaction

@@ -1,4 +1,4 @@
-const { Xfo, XfoParameter } = globalThis.zeaEngine
+import { Xfo, XfoParameter } from '@zeainc/zea-engine'
 
 /**
  * Primary UI component for user interaction

@@ -1,4 +1,4 @@
-const { Vec3, Vec3Parameter } = globalThis.zeaEngine
+import { Vec3, Vec3Parameter } from '@zeainc/zea-engine'
 
 /**
  * Primary UI component for user interaction

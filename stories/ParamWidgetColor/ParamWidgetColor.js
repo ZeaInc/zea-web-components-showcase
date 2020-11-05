@@ -1,4 +1,4 @@
-const { Color, ColorParameter } = globalThis.zeaEngine
+import { Color, ColorParameter } from '@zeainc/zea-engine'
 
 /**
  * Primary UI component for user interaction

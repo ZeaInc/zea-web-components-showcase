@@ -1,4 +1,4 @@
-const { StringParameter } = globalThis.zeaEngine
+import { StringParameter } from '@zeainc/zea-engine'
 
 /**
  * Primary UI component for user interaction

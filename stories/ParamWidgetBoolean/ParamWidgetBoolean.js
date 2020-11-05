@@ -1,5 +1,5 @@
 import { html } from 'lit-html';
-const { BooleanParameter } = globalThis.zeaEngine
+import { BooleanParameter } from '@zeainc/zea-engine'
 
 /**
  * Primary UI component for user interaction

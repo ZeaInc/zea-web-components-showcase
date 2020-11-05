@@ -1,5 +1,5 @@
 import { html } from 'lit-html';
-const { Box3, Parameter } = globalThis.zeaEngine
+import { Box3, Parameter } from '@zeainc/zea-engine'
 
 /**
  * Primary UI component for user interaction

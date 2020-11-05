@@ -1,4 +1,4 @@
-const {
+import {
   ParameterOwner,
   BooleanParameter,
   NumberParameter,
@@ -15,7 +15,7 @@ const {
   StringParameter,
   Box3,
   Parameter,
-} = globalThis.zeaEngine
+} from '@zeainc/zea-engine'
 
 /**
  * Primary UI component for user interaction
