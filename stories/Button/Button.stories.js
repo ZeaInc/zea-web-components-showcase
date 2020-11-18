@@ -4,7 +4,27 @@ export default {
   title: 'Components/Button',
   argTypes: {
     htmlContent: {},
-    variant: {},
+    variant: {
+      description: "desc",
+      default: 'solid',
+      control: {
+        type: 'select',
+        options: ['solid', 'outlined', 'pill', 'text']
+      }
+    },
+    disabled: {
+      control: {
+        type: 'boolean'
+      }
+    },
+    density: {
+      description: "desc",
+      default: 'normal',
+      control: {
+        type: 'select',
+        options: ['normal', 'small']
+      }
+    },
   },
   parameters: {
     layout: 'centered',
@@ -23,5 +43,7 @@ const Template = (args) => Button(args);
 export const Default = Template.bind({});
 Default.args = {
   htmlContent: 'Button',
-  variant: 'Solid'
+  variant: 'solid',
+  disabled: false,
+  density: 'normal'
 };

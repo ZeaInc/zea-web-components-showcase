@@ -6,104 +6,62 @@ import { html } from 'lit-html';
 export const Toolbar = ({ }) => {
  const toolbar = document.createElement('zea-toolbar')
   toolbar.tools = {
-      tool1: {
+    tool1: {
       tag: 'zea-toolbar-tool',
       data: {
-          iconName: 'alarm-outline',
-          toolName: 'Alarm Test Tool',
-          callback: function (e) {
-          console.log('alarm clicked', e)
-          },
+        icon: 'alarm-outline',
+        toolName: 'Alarm Test Tool',
+        callback: (e) => console.log('alarm clicked', e)
       },
-      },
-      tool2: {
+    },
+    tool2: {
       tag: 'zea-toolbar-toolset',
       data: {
-          tools: {
+        tools: {
           tool21: {
-              tag: 'zea-toolbar-tool',
-              data: {
-              iconName: 'beer-outline',
+            tag: 'zea-toolbar-tool',
+            data: {
+              icon: 'beer-outline',
               toolName: 'beer Test Tool',
-              },
+            },
           },
           tool22: {
-              tag: 'zea-toolbar-tool',
-              data: {
-              iconName: 'bicycle-outline',
+            tag: 'zea-toolbar-tool',
+            data: {
+              icon: 'bicycle-outline',
               toolName: 'bicycle Test Tool',
-              },
+            },
           },
           tool23: {
-              tag: 'zea-toolbar-tool',
-              data: {
-              iconName: 'car-outline',
+            tag: 'zea-toolbar-tool',
+            data: {
+              icon: 'car-outline',
               toolName: 'car Test Tool',
-              },
+            },
           },
-          },
+        },
       },
-      },
-      tool22: {
-      tag: 'zea-toolbar-toolset',
-      data: {
-          tools: {
-          tool21: {
-              tag: 'zea-toolbar-tool',
-              data: {
-              iconName: 'beer-outline',
-              toolName: 'beer Test Tool',
-              },
-          },
-          tool22: {
-              tag: 'zea-toolbar-tool',
-              data: {
-              iconName: 'bicycle-outline',
-              toolName: 'bicycle Test Tool',
-              },
-          },
-          tool23: {
-              tag: 'zea-toolbar-tool',
-              data: {
-              iconName: 'car-outline',
-              toolName: 'car Test Tool',
-              },
-          },
-          },
-      },
-      },
-      tool3: {
-      tag: 'zea-toolbar-tool',
-      data: {
-          iconName: 'bar-chart-outline',
-          toolName: 'Bar Chart Test Tool',
-          callback: function () {
-          console.log('tool 3 clicked')
-          },
-      },
-      },
-      tool4: {
+    },
+    tool3: {
       tag: 'zea-toolbar-colorpicker',
       data: {
-          colors: {
+        colors: {
           color1: {
-              background: 'red',
-              foreground: 'white',
-              callback: function (e) {
-              console.log('clicked red', e)
-              },
+            background: 'red',
+            foreground: 'white',
+            callback: (e) => console.log('clicked red', e),
           },
           color2: {
-              background: 'green',
-              foreground: 'white',
+            background: 'green',
+            foreground: 'white',
           },
           color3: {
-              background: 'blue',
-              foreground: 'white',
+            background: 'blue',
+            foreground: 'white',
           },
-          },
+        },
       },
-      },
+    },
   }
 
   return toolbar
