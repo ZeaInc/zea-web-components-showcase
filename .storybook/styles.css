@@ -38,3 +38,8 @@ body.sb-show-main div#root-inner {
   --color-disabled-2: #4b4b4b;
   --color-shadow: #00000026;
 }
+
+.sb-show-main,
+.sbdocs-preview {
+  background: #333333 !important;
+}

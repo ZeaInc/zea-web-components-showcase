@@ -41,18 +41,23 @@ export const TreeView = ({ highlightColor, enableHighlights, setSelected, nDeep 
 
   if (setSelected) selectionManager.setSelection(new Set([ rootTreeItem ]))
   treeViewElement.items = [rootTreeItem, new TreeItem('Second')]
-
-  treeViewElement.appData = { selectionManager }
+  treeViewElement.selectionManager = selectionManager
   
 
-  setTimeout(() => {
-    rootTreeItem.setName('NameChangeTest')
-  }, 2000)
+  // setTimeout(() => {
+  //   rootTreeItem.setName('NameChangeTest')
+  // }, 2000)
 
-  setTimeout(() => {
-    const newChild = new TreeItem('NewChild')
-    rootTreeItem.addChild(newChild)
-  }, 3000)
+  // setTimeout(() => {
+  //   const newChild = new TreeItem('NewChild')
+  //   rootTreeItem.addChild(newChild)
+  // }, 3000)
+
+  // setTimeout(() => {
+  //   const newChild = new TreeItem('NewRoot')
+  //   newChild.addChild(new TreeItem('NewRootChild'))
+  //   treeViewElement.items = [newChild]
+  // }, 5000)
 
   return treeViewElement
 };

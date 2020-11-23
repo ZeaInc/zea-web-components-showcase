@@ -1,5 +1,23 @@
 import { TreeView } from './TreeView';
 
+const documentation = `
+## Properties
+
+| Property    | Attribute   | Description | Type      | Default     |
+| ----------- | ----------- | ----------- | --------- | ----------- |
+| **items**   | --         |             | BaseItem[]   | undefined |
+| **expand**    | expand    |             | boolean | true     |
+| **selectionManager**   | selection-manager  |             | SelectionManager     | undefined |
+| ** undoRedoManager**   | undo-redo-manager  |             | UndoRedoManager     | undefined |
+`
+
+const code = `
+const treeViewEl = document.createElement('zea-tree-view')
+treeViewEl.items = [new TreeItem('TreeItem1'), new TreeItem('TreeItem2')]
+treeViewEl.selectionManager = new SelectionManager({}, {})
+treeViewEl.undoRedoManager = UndoRedoManager.getInstance()
+`
+
 export default {
   title: 'Components/TreeView',
   argTypes: {
@@ -28,10 +46,10 @@ export default {
     layout: 'centered',
     docs: {
       description: {
-        component: '**Layout description**'
+        component: documentation
       },
       source: {
-        code: `<zea-layout orientation="vertical" cell-a-size="50" resize-cell-a="false" cell-c-size="0" resize-cell-c="false" />`
+        code
       },
     },
   },
