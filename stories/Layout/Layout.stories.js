@@ -13,25 +13,41 @@ export default {
       }
     },
     cellASize: {
+      default: '150',
       control: {
         type: 'number'
-      }
-    },
-    resizeCellA: {
-      control: {
-        type: 'boolean'
       }
     },
     cellCSize: {
+      default: '150',
       control: {
         type: 'number'
       }
     },
-    resizeCellC: {
+    borders: {
+      default: true,
       control: {
         type: 'boolean'
       }
     },
+    addCells: {
+      description: "desc",
+      default: 'ABC',
+      control: {
+        type: 'select',
+        options: ['AB', 'ABC', 'BC'],
+        expanded: true
+      }
+    },
+    showResizeHandles: {
+      description: "desc",
+      default: 'AC',
+      control: {
+        type: 'select',
+        options: ['A', 'AC', 'C'],
+        expanded: true
+      }
+    }
   },
   parameters: {
     docs: {
@@ -48,9 +64,10 @@ export default {
 const Template = (args) => Layout(args);
 export const Default = Template.bind({});
 Default.args = {
-  orientation: 'vertical',
-  cellASize: 50,
-  resizeCellA: false,
-  cellCSize: 0,
-  resizeCellC: false,
+  orientation: 'horizontal',
+  cellASize: 150,
+  cellCSize: 150,
+  addCells: 'ABC',
+  borders: true,
+  showResizeHandles: 'AC'
 };

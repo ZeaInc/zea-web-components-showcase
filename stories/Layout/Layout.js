@@ -3,6 +3,6 @@ import { html } from 'lit-html';
 /**
  * Primary UI component for user interaction
  */
-export const Layout = ({ orientation, cellASize, resizeCellA, cellBSize, cellCSize, resizeCellC }) => {
-  return html`<zea-layout orientation=${orientation} cell-a-size=${cellASize} resize-cell-a=${resizeCellA} cell-b-size="${cellBSize}" cell-c-size=${cellCSize} resize-cell-c=${resizeCellC} />`
+export const Layout = ({ orientation, cellASize, cellCSize, addCells, borders, showResizeHandles }) => {
+  return html`<zea-layout orientation=${orientation} cell-a-size=${cellASize} cell-c-size=${cellCSize} add-cells=${addCells} show-resize-handles=${showResizeHandles} borders=${borders} />`
 };
