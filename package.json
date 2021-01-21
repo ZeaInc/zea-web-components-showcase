@@ -6,22 +6,25 @@
   "author": "Alvaro <alvaroe.pajaro@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.12.3",
-    "@storybook/addon-actions": "^6.1.2",
-    "@storybook/addon-essentials": "^6.1.2",
-    "@storybook/addon-links": "^6.1.2",
-    "@storybook/web-components": "^6.1.2",
-    "babel-loader": "^8.1.0",
+    "@babel/core": "^7.12.10",
+    "@storybook/addon-actions": "^6.1.14",
+    "@storybook/addon-essentials": "^6.1.14",
+    "@storybook/addon-links": "^6.1.14",
+    "@storybook/web-components": "^6.1.14",
+    "babel-loader": "^8.2.2",
     "lit-html": "^1.3.0",
+    "prettier": "^2.2.1",
     "react-is": "^17.0.1"
   },
   "dependencies": {
+    "@zeainc/zea-collab": "^4.1.1",
     "@zeainc/zea-engine": "2.2.4-rc",
-    "@zeainc/zea-ux": "2.1.2-rc",
-    "@zeainc/zea-collab": "^4.1.1"
+    "@zeainc/zea-ux": "2.1.2-rc"
   },
   "scripts": {
-    "storybook": "start-storybook -p 6006 --no-dll",
-    "build-storybook": "build-storybook --no-dll"
+    "build": "yarn run build-storybook",
+    "build-storybook": "build-storybook --no-dll",
+    "start": "yarn run storybook",
+    "storybook": "start-storybook -p 6006 --no-dll"
   }
 }
